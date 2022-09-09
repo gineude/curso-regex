@@ -7,7 +7,7 @@ Os e-mails dos convidados são:
     - rafa.sampaio@yahoo.com
 `;
 
-console.log(texto.match(/\w{2,}@\w+\.com(?:(\.\w{2}))?/g));
+console.log(texto.match(/[\w.]+@\w+\.\w{2,4}\.?\w{0,2}/g));
 
 
 console.log(texto.match(/[a-zA-Z0-9_]+@[a-zA-Z0-9_]+\.[a-zA-Z0-9_]{2,4}/g))
