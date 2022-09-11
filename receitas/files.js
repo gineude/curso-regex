@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require('fs')
 
 const read = nomeArquivo => {
-    return fs.writeFileSync(`${__dirname}/originais/${nomeArquivo}`, { encoding: 'utf8' });
+    return fs.readFileSync(`${__dirname}/originais/${nomeArquivo}`, { encoding: 'utf8' });
 }
 
 const write = (nomeArquivo, conteudo) => {
